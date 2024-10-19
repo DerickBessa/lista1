@@ -4,7 +4,7 @@ int main(void){
     int inteiro;
     printf("digite um valor inteiro: ");
     scanf("%d", &inteiro);
-    printf("esse é o valor de %d ao quadrado :  %d", inteiro,  inteiro*inteiro);
+    printf("esse é o valor de %d ao quadrado :  %2.f", inteiro,  pow((double) inteiro, 2));
 
     return 0;
 }
