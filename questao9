@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    unsigned int h, c , l;
+    printf("*   escolha as dimensoes da sua caixa em centimetros   *\n");
+    printf("altura:  ");
+    printf("comprimento:  ");
+    printf("largura:  ");
+    scanf("%u %u %u", &h , &c , &l);
+    printf("o volume da sua caixa é: %d  cm³", h*c*l);
+    return 0;
+}
