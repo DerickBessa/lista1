@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    float cotacao;
+    float dinheiro;
+    printf("digite a cotação atual do dolar:  ");
+    scanf("%f", &cotacao);
+    getchar();
+    printf("digite o valor em reais que vc deseja converter:  ");
+    scanf("%f", &dinheiro);
+    printf("o valor selecionado de R$%2.f equivale a $%2.f dolares", dinheiro, dinheiro*cotacao);
+    return 0;
+}
