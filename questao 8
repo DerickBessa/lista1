@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    int inteiro;
+    print("digite um inteiro:  ");
+    scanf("%d", &inteiro);
+    print(" o numero escolhido foi %d , seu antecessor é %d e seu sucessor é %d", inteiro, inteiro-1, inteiro +1);
+    return 0;
+}
