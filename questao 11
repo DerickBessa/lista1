@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    int num1, num2;
+    printf(" escolha 2 numeros");
+    scanf("%d %d", &num1, &num2);
+    printf("a soma : %d \n o produto:  %d\n, a diferença: %d \n o primeiro numero divido pelo segundo numero: %f\n e o resto é %d\n ", num1+num2, num1*num2, num1 - num2, (float)num1/(float)num2, num1%num2);
+    return 0;
+}
