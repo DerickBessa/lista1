@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(void){
+    int hours;
+    printf("quantas horas deseja converter?");
+    scanf("%d", &hours);
+    printf("isso da um total de %d minutos, que é %d segundos", hours*60, hours*3600);
+    return 0;
+}
