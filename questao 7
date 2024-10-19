@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    int inteiro;
+    printf("digite um valor inteiro: ");
+    scanf("%d", &inteiro);
+    printf("esse é o valor de %d ao quadrado :  %d", inteiro,  inteiro*inteiro);
+
+    return 0;
+}
