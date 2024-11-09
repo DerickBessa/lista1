@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <ctype.h>
+int main(void){
+    int x ;
+    unsigned char sexo;
+    float altura, peso;
+    printf("qual o seu sexo M/F");
+    scanf("%c", &sexo);
+    sexo = toupper(sexo);
+    getchar();
+    switch (sexo)
+    {
+    case 'M':
+        printf("digite sua altura e peso, respectivamente");
+        scanf("%f", &altura);
+            getchar();
+        printf("este e o seu IMC: %f",(72.7*altura)-58);
+        break;
+
+    case 'F':
+         printf("digite sua altura e peso, respectivamente");
+        scanf("%f", &altura);
+        printf("este e o seu IMC: %f",(62.1*altura)- 44.7);
+        break;
+
+    default:
+        break;
+    }
+        
+}   
