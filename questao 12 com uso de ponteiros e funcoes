@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int metodo1(int a,int b,int c){
+    printf("a: %d,  b: %d \n", a , b);
+    c = a;
+    a = b;
+    b = c;
+    printf("a: %d,  b: %d\n", a ,  b);
+}
+int metodo2(int *a,int *b){
+    printf("a = %d , b = %d\n", *a , *b);
+    *a = *a ^ *b;// a = c e  b = b
+    *b = *a ^ *b;// a = c e b = a
+    *a = *a ^ *b;// a = b e b = a
+    printf("a = %d , b = %d\n", *a , *b);
+}
+int main(void){
+    int A, B , C;
+    int metodo; 
+    scanf("%d",&A);
+    getchar();
+    scanf("%d", &B);
+    getchar();
+    printf("escolha entre o metodo 1 e 2\n");
+    scanf("%d", &metodo);
+    (metodo == 1) ? metodo1(A,B,C) : metodo2(&A,&B);
+    
+    
+    return 0;
+}   
