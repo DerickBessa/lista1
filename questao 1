@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(void){
+    int x;
+    printf("digite um valor para x");
+    scanf("%d", &x);
+    printf("%x, 0o%o", x, x);
+
+    return 0;
+}
