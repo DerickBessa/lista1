@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main(void){
+    int x = 500;
+    printf("o valor total da conta do restaurante e %.1f", (float)(x*0.1)+ x);
+}   
