@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main(void){
+    int x;
+    scanf("%d", &x);
+    printf("seu triplo: %d , seu quadrado: %d, seu meio: %f", (x*3), (x*x), (float)(x)/2);
+}
