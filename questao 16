@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h> // nao utilizei
+#include <stdlib.h>
+
+int main(void){
+    int numero, numero_abs;
+    puts("escolha qualquer numero, positivo ou negativo");
+    scanf("%d",&numero);
+    numero_abs = abs(numero);
+    printf("o numero escolhido foi %d  e o seu modulo e:  %d", numero ,  numero_abs);
+    return 0;
+}   
