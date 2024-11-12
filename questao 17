@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void){
+    float raio , diametro, circunferencia, area;
+    float pi = 3.14159; //pode se usar tb a constante M_PI
+    double expoente = 2;
+    printf(" diga aqui o valor do raio da sua circunferencia");
+    scanf("%f",&raio);
+    diametro = 2*raio;
+    circunferencia = 2*pi*raio;
+    area = pi*pow(raio,2); // M_PI*pow(raio,2)
+
+    printf("o diametro da circunferencia e: %.2f, seu comprimento: %.4f e a area do circulo: %.4f", diametro, circunferencia, area);
+}   
