@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void){
+    int dias;
+
+    inicio:
+    puts("insira o total de dias trabalhados pelo funcionario");
+        scanf("%d", &dias);
+    
+    float valor_por_dia = 50.25;
+    float imposto = 0.1; //mesma coisa que 10%  = 10/100 = 0.1
+
+    if (dias < 0) {
+        puts("voce nao pode trabalhar dias negativos.");
+            goto inicio;
+
+    }else if (dias > 0 && dias <= 10){
+        dias = (float)dias;
+            float valor_total_liquido = (valor_por_dia*dias);
+                float valor_total_final = valor_total_liquido - valor_total_liquido *imposto;
+                    printf("o valor total a ser recebido pelo funcionario durante %d dias e de: %.2f", (int)dias , valor_total_final );
+    
+
+    }else if (dias > 10 && dias <= 20){
+        dias = (float)dias;
+            float valor_total_liquido = (valor_por_dia*dias);
+                float valor_total_final = (valor_total_liquido - valor_total_liquido *imposto) + valor_total_liquido * 0.2;// 0.2 = 20% de gratificacao
+                    printf("o valor total a ser recebido pelo funcionario durante %d dias e de: %.2f", (int)dias , valor_total_final );
+    
+    }else if (dias > 20){
+        dias = (float)dias;
+            float valor_total_liquido = (valor_por_dia*dias);
+                float valor_total_final = (valor_total_liquido - valor_total_liquido *imposto) + valor_total_liquido * 0.3;// 0.2 = 20% de gratificacao
+                    printf("o valor total a ser recebido pelo funcionario durante %d dias e de: %.2f", (int)dias , valor_total_final );
+    
+    }
+
+    
+    return 0;
+}   
