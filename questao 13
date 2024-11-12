@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void){
+    float temperaturaC, temperaturaF;
+    
+    puts("escreva a temperatura que deseja converter para graus Farenheit");
+        scanf("%f", &temperaturaC);
+    
+    temperaturaF = ((temperaturaC*9) + 160) / 5 ; // F = (C * 9 +160) / 5
+    
+    printf("a temperatura %.2f C, em graus Farenheit vale: %.2f ",  temperaturaC, temperaturaF);
+    
+    return 0;
+}   
