@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main(void){
+    float valor_hora;
+    int horas_dia, dias;
+    float salario_minimo = 1320.00;
+
+    printf("--------------------------------------------------\n     CALCULADORA DE SALARIOS COM BASE NO INSS     \n--------------------------------------------------\n");
+    puts("quanto vale uma hora de aula do professor?");
+        scanf("%f",&valor_hora);
+            getchar();
+    
+    puts("quantas horas em media o professor trabalhou por dia?");
+        scanf("%d", &horas_dia);
+            getchar();
+    puts("quantos dias no mes o professor trabalhou?");
+        scanf("%d", &dias);
+            getchar();
+        
+    int horas_mes = horas_dia * dias ;//quantidade de dias de janeiro
+    float valor_bruto = valor_hora * (float)horas_mes;
+
+    if (valor_bruto<= salario_minimo)
+        {
+            printf("o valor liquido do salario do professor e %.2f", valor_bruto - valor_bruto*0.075); // 7,5% de imposto do INSS
+        }
+        else if ( valor_bruto > salario_minimo && valor_bruto< 2*salario_minimo)
+        {
+            printf("o valor liquido do salario do professor e %.2f", valor_bruto - valor_bruto* 0.09); // 9% de imposto do INSS
+        }
+        else if ( valor_bruto > 2*salario_minimo && valor_bruto < 3*salario_minimo)
+        {
+            printf("o valor liquido do salario do professor e %.2f", valor_bruto - valor_bruto* 0.12); // 12% de imposto do INSS
+        }
+        else if ( valor_bruto >= 3*salario_minimo)
+        {
+            printf("o valor liquido do salario do professor e %.2f", valor_bruto - valor_bruto* 0.14); // 14% de imposto do INSS
+        }
+        
+        
+    return 0;
+}   
