@@ -6,8 +6,10 @@ int main(void){
     float raio , diametro, circunferencia, area;
     float pi = 3.14159; //pode se usar tb a constante M_PI
     double expoente = 2;
+
     printf(" diga aqui o valor do raio da sua circunferencia");
-    scanf("%f",&raio);
+        scanf("%f",&raio);
+    
     diametro = 2*raio;
     circunferencia = 2*pi*raio;
     area = pi*pow(raio,2); // M_PI*pow(raio,2)
