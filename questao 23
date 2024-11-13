@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void){
+    int numero = 5 , copia_numero = 5, resultado = 0,copia_resultado, resultado2 = 0 , numero_n = 5;
+    int bits;
+    
+    while(copia_numero> 0){
+        if (copia_numero & 1){
+            resultado+= numero; /*
+            100
+           x100
+           -------
+           000
+                        
+    
+    ```````````````````````\
+            1000
+            x10
+        --------------
+            000
+           0000
+    
+    ```````````````````````
+        100000
+        x1
+        ------------
+            000
+           0000
+          10000
+        ----------
+          10000 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            */
+
+        }
+        numero <<=1;/// pq quando ha uma soma na multiplicacao, lembre-se de que a gente pula uma casa pra frente a cada resultado e coloca um 0 no lugar, e basicamente a mesma coisa
+        copia_numero >>=1; 
+    }
+    copia_resultado = resultado;
+    while(numero_n > 0){
+        if (numero_n & 1){
+            resultado2 += copia_resultado;
+        }
+        copia_resultado<<=1;
+        numero_n>>=1;
+    }
+        
+    printf("%d e %d",resultado,resultado2);
+return 0;
+}
