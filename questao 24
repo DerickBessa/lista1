@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void){
+    int segundos, horas,minutos, segundos_especificos;
+    scanf("%d", &segundos);
+    if (segundos>=3600)
+    {
+            horas = (segundos - (segundos%3600))/3600;
+                minutos = (segundos % 3600 - segundos % 60)/60;
+                    segundos_especificos = segundos%60;
+        
+    }
+    else if(segundos>=60 && segundos<3600){
+        minutos = (segundos % 3600 - segundos % 60)/60;
+            segundos_especificos = segundos%60;
+        
+    }
+    else if(segundos < 60 ){
+            segundos_especificos = segundos%60;
+        
+    }
+    
+
+
+
+
+
+printf("%d horas , %d minutos %d segundos",horas ,minutos, segundos_especificos);
+
+
+return 0;
+}
