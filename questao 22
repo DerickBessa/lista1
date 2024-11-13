@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void){
+    int numero,digito, inverso = 0;
+    printf("digite um numero de 3 digitos");
+    scanf("%d", &numero);
+    getchar();
+    int guarda_numero = numero;
+    if(100<= numero && numero<= 999){
+        for (int i = 0 ; i<=2 ; i++){
+            digito = numero % 10; // 123 = resto 3 // o numero vem a ser 12 // r = 2 // r = 1 
+                inverso = inverso * 10 + digito; // inverso == 3 // inverso == 32 // inverso == 321
+                    numero = numero / 10;
+    }
+    }    
+    
+
+
+    
+      else{
+        printf("ERROR, NUMERO MENOR QUE 3 DIGITOS OU MAIOR");
+        return 1;
+    }
+    printf("%d o inverso desse numero e %d", guarda_numero , inverso);
+    return 0;
+}
