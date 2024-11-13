@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+// vou criar uma funcao pra cada pra ficar mais organizado
+int retangulo(void){
+    printf("  **********\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  **********\n");
+
+}
+
+int circulo(void){
+    printf("     ****   \n");
+    printf("   *      * \n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("  *        *\n");
+    printf("   *      * \n");
+    printf("     ****   \n");
+
+}
+int seta(void){
+    printf("      *     \n");
+    printf("     ***    \n");
+    printf("   *******  \n");
+    printf("      *     \n");
+    printf("      *     \n");
+    printf("      *     \n");
+    printf("      *     \n");
+    printf("      *     \n");
+    printf("      *     \n");
+
+}
+int triangulo(void){
+    printf("        *        \n");
+    printf("      *   *      \n");
+    printf("    *       *    \n");
+    printf("  *           *  \n");
+    printf("*               *\n");
+    printf("  *           *  \n");
+    printf("    *       *    \n");
+    printf("      *   *      \n");
+    printf("        *        \n");
+
+}
+int main(void){
+    retangulo();
+    circulo();
+    seta();
+    triangulo();
+
+ return 0;
+}   
