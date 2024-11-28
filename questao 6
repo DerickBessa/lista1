@@ -7,6 +7,6 @@ int main(void){
     scanf("%d", &minutes);
     printf("quantos segundos deseja?");
     scanf("%d", &seconds);
-    printf("isso da um total de %d segundos",(seconds) + (hours*60) +(hours*3600);
+    printf("isso da um total de %d segundos",(seconds) + (hours*60) +(hours*3600));
     return 0;
 }
