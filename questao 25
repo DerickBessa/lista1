@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    double x1,y1, x2,y2;
+
+    scanf("x1 e y1 = %f %f", x1 , y1);
+    getchar();
+    scanf("x2 e y2 = %f %f", x2 , y2);
+
+    double x = x1 + x2;
+    double y = y1 + y2;
+    double d= sqrt(pow(x , 2) + pow(y , 2));
+    printf("%f é o resultado da soma dos pontos selecionadors")
+}
