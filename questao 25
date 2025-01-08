@@ -12,4 +12,5 @@ int main(){
     double y = y1 + y2;
     double d= sqrt(pow(x , 2) + pow(y , 2));
     printf("%f é o resultado da soma dos pontos selecionadors")
+return 0;
 }
