@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main(int argc , char **argv){
+    if(argc != 4){
+        printf("\n \t \t utilize o formato <valor 1> <valor2> <valor 3>.... \n\n");
+    }
+    float x = atoi (*(argv+1));
+    float y = atoi (*(argv+2));
+    float z = atoi (*(argv+3));
+
+    float media_Arit = (x + y + z)/ ((float)argc-1.0);
+    float media_geo = pow ((x * y * z) , 1.0/3.0 );
+    printf("media aritmetica %f , media geometrica %f, valores x=%f y=%f z=%f", media_Arit, media_geo, x , y , z);
+    return 0;
+}
